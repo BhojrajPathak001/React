@@ -6,7 +6,7 @@ import RootLayout from "./pages/Root";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayout />,
+    element: <RootLayout />, //yeh wrap krta hai saare children routes ko aur outlet deta hai jo ki bata hai kaha par children aaane cahheye
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/products", element: <ProductsPage /> },
